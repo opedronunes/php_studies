@@ -3,8 +3,8 @@
 ## Desenvolvedor Back-End PHP
 
 - Configuração de ambiente:<br>
-    [x]VSCode - editor de texto (IDE)<br>
+    [x] VSCode - editor de texto (IDE)<br>
     -> https://code.visualstudio.com/download<br>
-    [x]Xampp - pacote com PHP, Apache, PHPMyAdmin e MySql.<br>
+    [x] Xampp - pacote com PHP, Apache, PHPMyAdmin e MySql.<br>
     -> https://www.apachefriends.org/download.html
 

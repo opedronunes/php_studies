@@ -11,4 +11,34 @@ São softwares que, a partir de linguagens de programação, como Java, Python, 
 è por meio do Algoritmo que os softwares são desenvolvidos, descrevendo uma sequência de passos lógicos para execuçao de uma terefa que consiste em:<br>
 - Entrada de informações -> Precessamento dessas informações -> Saída ou resultado
 
+## Condicionais
 
+- Comando<br>
+if - Verifica se uma condiçao é verdadeira.<br>
+```
+if($nome1 == $nome2){
+    echo 'Os nomes são iguais!';
+}
+```
+- Comando <br>
+else - Caso condição do if não retorne verdadeiro, o esle retorna falso.
+```
+if($nome1 == $nome2){
+    echo 'Os nomes são iguais!';
+}else{
+    echo 'Os nomes são diferentes';
+}
+
+```
+- Comando <br>
+elseif - adiciona mais uma condição, verificando se não se corresponder a outra condição.
+```
+if ($media < 4) {
+    echo 'Aluno reprovado!';
+}elseif($media >= 4 && $media < 6){
+    echo 'Aluno em recuperação!'; 
+}else{
+    echo 'Aluno aprovado!';
+}
+
+```
