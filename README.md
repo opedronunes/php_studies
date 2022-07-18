@@ -8,3 +8,9 @@
     [x] Xampp - pacote com PHP, Apache, PHPMyAdmin e MySql.<br>
     -> https://www.apachefriends.org/download.html
 
+## Extensões no VSCode
+
+- PHP Debug
+- PHP Intelephense
+- PHP Server
+- Code Runner

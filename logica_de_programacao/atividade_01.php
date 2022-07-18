@@ -9,12 +9,12 @@ Paulo deverá pagar. Imprima os dados do script com as mensagens adequadas.
 */
 
 $limite = 50;
-$peso = 63.4;
-$multa = 4;
+$peso = number_format(63, 2);
+$multa = number_format(4, 2);
 
 
 if ($peso > 50) {
-    $dif_peso = ($peso - $limite);
+    $dif_peso = number_format(($peso - $limite), 2);
     $vl_multa = round($dif_peso * $multa, 2);
     echo 'Oops, o peso do peixe é de '.$peso.' excedendo o limite permitido! <br>';
     echo "A diferença é de: ".$dif_peso.' kilos. <br>';
