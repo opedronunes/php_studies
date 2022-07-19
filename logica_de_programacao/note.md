@@ -42,3 +42,32 @@ if ($media < 4) {
 }
 
 ```
+
+## Variáveis
+
+- $variável: recebe um valor que pode mudar, podendo ser no formato string, inteiro, float...
+```
+$peso = 10;
+$nome = 'aula';
+```
+- Contante: que não altera o valor, sendo ele fixo.
+```
+const valorLimite = 50;
+```
+
+## Funções
+
+- isset: possibilita a verificação de algum valor atribuido a uma variável.
+- unset: limpa o valor de uma variável.
+
+```
+$valorLimite = 50;
+
+//unset($valorLimite);
+
+if (isset($valorLimite)) {
+    echo "Valor alocado!";
+}else{
+    echo "Valor Nulo!";
+}
+```
