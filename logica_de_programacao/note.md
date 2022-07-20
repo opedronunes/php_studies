@@ -11,6 +11,35 @@ São softwares que, a partir de linguagens de programação, como Java, Python, 
 è por meio do Algoritmo que os softwares são desenvolvidos, descrevendo uma sequência de passos lógicos para execuçao de uma terefa que consiste em:<br>
 - Entrada de informações -> Precessamento dessas informações -> Saída ou resultado
 
+## Variáveis
+
+- $variável: recebe um valor que pode mudar, podendo ser no formato string, inteiro, float...
+```
+$peso = 10;
+$nome = 'aula';
+```
+- Contante: que não altera o valor, sendo ele fixo.
+```
+const valorLimite = 50;
+```
+
+## Funções
+
+- isset: possibilita a verificação de algum valor atribuido a uma variável.
+- unset: limpa o valor de uma variável.
+
+```
+$valorLimite = 50;
+
+//unset($valorLimite);
+
+if (isset($valorLimite)) {
+    echo "Valor alocado!";
+}else{
+    echo "Valor Nulo!";
+}
+```
+
 ## Condicionais
 
 - Comando<br>
@@ -42,32 +71,48 @@ if ($media < 4) {
 }
 
 ```
-
-## Variáveis
-
-- $variável: recebe um valor que pode mudar, podendo ser no formato string, inteiro, float...
+- Comando <br>
+SwitchCase - Muito utilizado quando houver uma quantidade maior de verificações.
 ```
-$peso = 10;
-$nome = 'aula';
-```
-- Contante: que não altera o valor, sendo ele fixo.
-```
-const valorLimite = 50;
+$codigo = 5;
+
+switch ($codigo) {
+    case 1:
+        echo $codigo." - Alimento não perecível.";
+        break;
+
+    case 2:
+        echo $codigo." - Alimento perecível.";
+        break;
+
+    case 3:
+        echo $codigo." - Vestuário.";
+        break;
+            
+    case 4:
+        echo $codigo." - Limpeza.";
+        break;
+
+    case 5:
+        echo $codigo." - Celulares.";
+        break;
+
+    case 6:
+        echo $codigo." - Informática.";
+        break;
+
+    case 7:
+        echo $codigo." - Móveis.";
+        break;
+
+    case 8:
+        echo $codigo." - Outros.";
+        break;
+
+        default:
+        echo "Não identificado!";
+        
+        break;
+    }
 ```
 
-## Funções
-
-- isset: possibilita a verificação de algum valor atribuido a uma variável.
-- unset: limpa o valor de uma variável.
-
-```
-$valorLimite = 50;
-
-//unset($valorLimite);
-
-if (isset($valorLimite)) {
-    echo "Valor alocado!";
-}else{
-    echo "Valor Nulo!";
-}
-```
