@@ -115,4 +115,29 @@ switch ($codigo) {
         break;
     }
 ```
+- Comando <br>
+for - É a estrutura de repetição que utilizamos quando sabemos a quantidade de repetições que devem se executadas.
+```
+for ($i=1; $i <= 10; $i++) { 
+    echo $i." Seja bem vindo!\n";
+}
+```
 
+- Comando Do While <br>
+do while - Utilizado quando não sabemos a quntidade da contagem, portanto o loop roda até achar o valor.
+```
+$a = 1;
+
+while ($a <= 10) {
+    echo "Bem vindo \n";
+    $a++;
+}
+```
+- Comando <br>
+Do while - a diferença é a verificação que ocorre primeiro no comando e depois ocorre a repetição.
+```
+do {
+    echo "Seja bem vindo do while.\n";
+    $b++;
+} while ($b <= 10);
+```
