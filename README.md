@@ -18,6 +18,7 @@
 ## Projeto final
 
 - Englobará todo conteúdo do curso: <br>
+
 Em conformidade de toda a turma poderá ser criado um sistema de tema variado a escolha de cada aluno. <br>
 Os pré requisitos do projeto são:<br>
 **Tela de login** com autenticação de usuários, validação dos dados mostrando mensagens de erro ou sucesso por meio de email, senha e utilização de sessions.<br>
@@ -29,3 +30,4 @@ Os pré requisitos do projeto são:<br>
 **Área de relatórios**, gerar relatórios em PDF e Excel.<br>
 **Segurança de dados**<br>
 **Trabalhar com o paradigma de orientação objetos**<br>
+**Hospedar na web**

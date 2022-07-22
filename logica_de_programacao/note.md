@@ -123,8 +123,8 @@ for ($i=1; $i <= 10; $i++) {
 }
 ```
 
-- Comando Do While <br>
-do while - Utilizado quando não sabemos a quntidade da contagem, portanto o loop roda até achar o valor.
+- Comando<br>
+while - Utilizado quando não sabemos a quntidade da contagem, portanto o loop roda até achar o valor.
 ```
 $a = 1;
 
@@ -141,3 +141,24 @@ do {
     $b++;
 } while ($b <= 10);
 ```
+
+## Operadores aritméticos
+
+- **Operador +**(adição, soma)<br>
+- **Operador -** (subtração)<br>
+- **Operador /** (divisão)<br>
+- **Operador %** (resto da divisão)<br>
+
+## Operadores relacionais
+
+- **Operador >** (maior)<br>
+- **Operador <** (menor)<br>
+- **Operador >=** (maior ou igual)<br>
+- **Operador <=** (menor ou igual)<br>
+- **Operador !=** (diferente)<br>
+
+## Operadores lógicos
+
+- **Operador && - and**: obrigatoriamente as duas comparações devem ser verdadeira para retonar verdadeiro.
+- **Operador || - or**: Apenas uma comparação verdadeira retorna a comparação verdadeira.
+- **Operador !**: inverte a logica da comparação, sinal de negação.
