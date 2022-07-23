@@ -16,6 +16,7 @@ if ($variavel1 > 0) {
     echo $variavel1." é igual a zero";
 }
 echo "\n-----\n";
+
 /**
  2 - Crie um algoritmo que leia um valor de uma variável e exiba a tabuada de 0 a 10 de acordo 
 com o numero informado na variável. Exemplo $variavel = 5    Saída 5 x 0 = 0 ; 5 x 1 = 5 ; 5 x 2 = 10......
