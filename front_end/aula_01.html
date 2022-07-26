@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica - HTML</title>
+</head>
+<body>
+    <b>Negrito</b><br>
+    <strong>Negrito com strong</strong><br>
+    <i>Itálico</i><br>
+    <u>Sublinhado</u><br>
+
+    <h1>Title</h1>
+    <h2>Title</h2>
+    <h3>Title</h3>
+    <h4>Title</h4>
+    <h5>Title</h5>
+    <h6>Title</h6>
+
+    <p style="margin: 0;">Exemplor de uso do sup <sup>acima</sup></p><br>
+    <p style="margin: 0;">Exemplo de uso do sub <sub>abaixo</sub></p><br>
+
+    <a href="" target="_blank">Tag de link</a>
+
+    <marquee behavior="scroll" direction="left" vspace="5%">Curso desenvolvdor back-end com PHP</marquee>
+
+    <form style="width: 400px; display: flex; justify-content: center; flex-direction: column; border: 1px solid gray; border-radius: 8px;" action="" method="post"> 
+
+        <div style="display: flex; flex-direction: column; padding: 8px;">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding: 8px;">
+            <label for="idade">idade:</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding: 8px;">
+            <label for="email">idade:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+        </div>
+
+        <div style="display: flex; padding: 8px;">
+            <label for="masculino">Sexo:</label>
+            <input type="radio" name="sexo" id="masculino" value="1">Masculino
+            <input type="radio" name="sexo" id="masculino" value="2">Feminino
+        </div>
+
+        <div style="display: flex; padding: 8px;">
+            <label for="">Cursos:</label>
+            <input type="checkbox" name="curso" value="1">Programação PHP
+            <input type="checkbox" name="curso" value="2">Banco de dados
+            <input type="checkbox" name="curso" value="2">Programação Front-End
+        </div>
+
+    </form>
+
+</body>
+</html>

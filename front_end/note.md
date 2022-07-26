@@ -1,0 +1,7 @@
+## O que é o HTML
+
+- É composto por tags para estrutura uma página web. No entanto o HTML é estrutura de marcação.<br>
+Já as TAGS é formada por um conjunto de caracteres que representa um elemento, contendo instruçõe que serão 
+lidas e interpretadas pelo navegador que irá rederizar e apresentar a estrutura visual ao usuário.
+
+## Estrutura básica de documento HTML
