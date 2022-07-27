@@ -5,3 +5,7 @@ Já as TAGS é formada por um conjunto de caracteres que representa um elemento,
 lidas e interpretadas pelo navegador que irá rederizar e apresentar a estrutura visual ao usuário.
 
 ## Estrutura básica de documento HTML
+
+- HTML: Tag inicial da estrutura
+- HEAD: O cabeçalho do corpo da estrutura
+- BODY: Corpo da estrutura
