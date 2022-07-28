@@ -89,8 +89,8 @@
         if ($peso > 50) {
             $dif_peso = number_format(($peso - $limite), 2);
             $vl_multa = round($dif_peso * $multa, 2);
-            echo '<h4>Oops, o peso do peixe é de '.$peso." excedendo o limite permitido!</h4><br>";
-            echo "<h4>A diferença é de: ".$dif_peso." kilos.</h4><br>";
+            echo '<h4 class="text-danger">Oops, o peso do peixe é de '.$peso." excedendo o limite permitido!</h4><br>";
+            echo '<h4 class="text-primary">A diferença é de: '.$dif_peso.' kilos.</h4><br>';
             echo "<h4>O valor da multa é de: R$".$vl_multa.' reais.</h4>';
         }elseif($peso <= 50){
             echo '<h4>Que ótimo, o peso é de '.$peso.' kilos e está dentro do limite!</h4>';

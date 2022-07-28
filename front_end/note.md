@@ -9,3 +9,6 @@ lidas e interpretadas pelo navegador que irá rederizar e apresentar a estrutura
 - HTML: Tag inicial da estrutura
 - HEAD: O cabeçalho do corpo da estrutura
 - BODY: Corpo da estrutura
+
+## Listas
+- Utilizadas para ordernar um conteúdo, listar itens ordenados ou desordenados.
