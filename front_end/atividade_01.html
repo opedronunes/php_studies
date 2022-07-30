@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- nav, a, button, ul, li-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./atividade_01.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#linguagens">Linguagens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="row">
+        <main class="col-md-9">
+            <!--
+                img
+            -->
+            <div>
+                <img class="img-fluid" src="https://www.alura.com.br/artigos/assets/qual-e-a-melhor-linguagem-de-programacao/qual-e-a-melhor-linguagem-de-programacao.png" alt="">
+            </div>
+            <section class="my-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container">
+                            <!--
+                                p, h1, article
+                            -->
+                            <article>
+                                <h1>O que é programaçao</h1>
+                                <p>O conceito mais básico, e que deve ser pontuado para os estudantes, é o que, de fato, é a programação. 
+                                    Esse termo se refere a uma atividade de planejamento, elaboração, escrita e desenvolvimento de 
+                                    programas, seja de computadores, seja de tablets, celulares ou outros equipamentos eletrônicos.
+                                    O programador é o responsável por escrever as ações que determinado programa ou plataforma deverá 
+                                    realizar. Por isso, ele precisa pensar em todas as possibilidades que o usuário poderá executar. 
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                    iframe
+                -->
+                <div class="container">
+                    <h5>Assita o <em>Vídeo</em> abaixo.</h5>
+                    <iframe class="shadow-lg rounded" width="100%" height="315" src="https://www.youtube.com/embed/MwCx2qKdbDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <!--
+                    h2, ol,
+                -->
+                <div id="linguagens" class="container">
+                    <h2>Linguagens de programação</h2>
+                    <p>Aprender uma linguagem de programação pode trazer muitos benefícios, seja para iniciar uma carreira no 
+                        ramo de tecnologia ou para melhorar suas habilidades em programação de sites e aplicações.
+                    </p>
+
+                    <h4>5 principais linguagens</h4>
+                    <ol>
+                        <li title="Linguagem python">Python<sup> Será?</sup></li>
+                        <small>
+                            Python é uma linguagem de programação de alto nível e para propósitos diversos. Ela pode ser 
+                            utilizada para múltiplas tarefas, desde a análise e visualização de dados até o desenvolvimento, 
+                            prototipação e automação web.
+                        </small>
+                        <li>C# <sub>Nunca vi</sub></li>
+                        <small>
+                            C# é uma linguagem de programação orientada a objetos – um modelo que organiza o design de software 
+                            ao redor de objetos.
+                        </small>
+                        <li>C++</li>
+                        <small>
+                            A linguagem de programação C++ é uma versão melhorada da C, e uma das mais populares linguagens na 
+                            área de ciências da computação.
+                        </small>
+                        <li>Javascript</li>
+                        <small>
+                            JavaScript, juntamente com HTML e CSS, é a melhor linguagem de programação para aprender desenvolvimento 
+                            web front-end. 97,8% de todos os sites no mundo utilizam JavaScript para seu desenvolvimento client-side 
+                            (a interface que é visível para os visitantes).
+                        </small>
+                        <li>PHP <sup>A melhor!</sup></li>
+                        <small>
+                            PHP é uma das primeiras linguagens de programação back-end que os desenvolvedores consideram ser essencial aprender. Além disso, 
+                            o PHP é utilizado por 78,1% de todos os sites na internet, já que é a linguagem primária do WordPress.
+                        </small>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <div id="contato" class="container">
+                    <!--
+                        h3, b
+                    -->
+                    <div class="my-5">
+                        <h3>Próxima turma</h3>
+                        <b>Mande um e-mail para entrar:</b><br>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Seu nome completo:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="mb-2 btn btn-outline-primary" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="col-md-3">
+            <h6 class="my-2">Top 10 linguagens</h6>
+            <div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data da criação</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Python</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>C#</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>C++</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Javascript</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>PHP</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Swift</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Java</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Go</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Sql</td>
+                        <td>00-00-0000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Ruby</td>
+                        <td>00-00-0000</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div>
+        </aside>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
