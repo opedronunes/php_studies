@@ -1,0 +1,102 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url('https://picsum.photos/g/3000/2000');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+main{
+    display: grid;
+    gap: 10px;
+}
+
+.cards{
+    background: #f7f5ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px 1px #8d8d8d8d;
+    position: relative;
+    overflow: hidden;
+    transition: all .2s;
+    
+}
+
+.cards:hover:after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 45%;
+width: 100%;
+background: #136ace;
+
+}
+
+.cards img{
+    border-radius: 50%;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.cards img::before{
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    opacity: 0.9;
+    transition: all .3s linear 0s;
+}
+
+.cards img::after{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.cards:hover img{
+    box-shadow: 0 0 20px 1px #8d8d8d8d;
+    transform: scale(0.7);
+}
+
+.card-text{
+    text-align: center;
+    
+}
+
+.card-text h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3, small{
+    margin: 0;
+}
+
+@media(min-width: 600px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 900px) {
+    main{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
