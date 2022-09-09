@@ -5,44 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>cadastro de usuário</title>
 </head>
 <body>
-
     <?php
         $text = "";
 
         if ($_GET["cad"] == "erro_cpf") {
             $text = "<p style='color: red;'>Usuário já cadastrado! Informe outro cpf.</p>";
-        }
-        if ($_GET["cad"] == "ok") {
+        }elseif($_GET["cad"] == "ok"){
             $text = "<p style='color: green;'>Registrado com sucesso!.</p>";
-        }
-        if ($_GET["cad"] == "erro") {
+        }elseif($_GET["cad"] == "erro"){
             $text = "<p style='color: red;'>Erro no cadastro, tente novamente.</p>";
         }
-
-        echo $text;
     ?>
-
-    <form action="recebe_registro.php" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
-        <br>
-        <br>
-        <label for="">CPF:</label>
-        <input type="text" name="cpf" id="cpf">
-        <br>
-        <br>
-        <label for="endereco">Endereço:</label>
-        <input type="text" name="endereco" id="endereco">
-        <br>
-        <br>
-        <label for="perfil_id">Perfil:</label>
-        <input type="number" name="perfil_id" id="perfil_id">
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <main>
+        <section class="container" style="height: 100vh;">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <form action="recebe_registro.php" method="POST">
+                    <span><?php echo $text ?></span>
+                    <div class="my-2">
+                        <label class="form-label" for="nome">Nome:</label>
+                        <input class="form-control" type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="by-2">
+                        <label class="form-label" for="">CPF:</label>
+                        <input class="form-control" type="text" name="cpf" id="cpf" required>
+                    </div>
+                    <div class="by-2">
+                        <label class="form-label" for="endereco">Endereço:</label>
+                        <input class="form-control" type="text" name="endereco" id="endereco" required>
+                    </div>
+                    <div class="by-2">
+                        <label class="form-label" for="perfil_id">Perfil:</label>
+                        <input class="form-control" type="number" name="perfil_id" id="perfil_id" required>
+                    </div>
+                    <input class="btn btn-secondary my-2" type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

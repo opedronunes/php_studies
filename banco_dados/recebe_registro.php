@@ -26,13 +26,4 @@ if ($recebe) {
     header("Location: registro.php?cad=erro");
     exit;
 }
-
-
-/*
-$no_user = $_POST["nome"];
-$nu_cpf = $_POST["cpf"];
-$no_endereco = $_POST["endereco"];
-$nu_perfil = $_POST["perfil_id"];
-*/
-
 ?>
