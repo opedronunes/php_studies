@@ -22,7 +22,7 @@
     ?>
     <main>
         <section class="container" style="height: 100vh;">
-            <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex justify-content-center align-items-center flex-column h-100">
                 <form action="recebe_registro.php" method="POST">
                     <span><?php echo $text ?></span>
                     <div class="my-2">
@@ -43,6 +43,9 @@
                     </div>
                     <input class="btn btn-secondary my-2" type="submit" value="Enviar">
                 </form>
+                <div class="d-flex justify-content-start">
+                    <a class="text-decoration-none my-3" href="./apagar.php">Apagar registro</a>
+                </div>
             </div>
         </section>
     </main>
