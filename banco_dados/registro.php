@@ -23,6 +23,7 @@
     <main>
         <section class="container" style="height: 100vh;">
             <div class="d-flex justify-content-center align-items-center flex-column h-100">
+                <h4 class="my-4">Tela de registro</h4>
                 <form action="recebe_registro.php" method="POST">
                     <span><?php echo $text ?></span>
                     <div class="my-2">
@@ -43,8 +44,10 @@
                     </div>
                     <input class="btn btn-secondary my-2" type="submit" value="Enviar">
                 </form>
-                <div class="d-flex justify-content-start">
-                    <a class="text-decoration-none my-3" href="./apagar.php">Apagar registro</a>
+                <div class="d-flex justify-content-start justify-content-center align-items-center gap-2">
+                    <a class="btn btn-outline-success my-3" href="./registro.php">Tela de registro</a>
+                    <a class="btn btn-outline-warning my-3" href="./atualizar.php">Tela de Atualização</a>
+                    <a class="btn btn-outline-danger my-3" href="./apagar.php">Tela de exclusão</a>
                 </div>
             </div>
         </section>
