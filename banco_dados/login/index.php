@@ -11,13 +11,15 @@
 <body>
     <?php
         $text = "";
-
-        if ($_GET["cad"] == "erro_cpf") {
-            $text = "<p style='color: red;'>Usuário já cadastrado! Informe outro cpf.</p>";
-        }elseif($_GET["cad"] == "ok"){
-            $text = "<p style='color: green;'>Registrado com sucesso!.</p>";
-        }elseif($_GET["cad"] == "erro"){
-            $text = "<p style='color: red;'>Erro no cadastro, tente novamente.</p>";
+        if (isset($_GET["login"])) {
+            if ($_GET["login"] == "erro") {
+                $text = "<p class='alert alert-danger my-2'>Usuário inválido ou dados incorretos!</p>";
+            }elseif ($_GET["login"] == "err_acesso") {
+                $text = "<p class='alert alert-danger my-2'>Faça Login para acessar!</p>";
+            }
+        }
+        if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true){
+            header("Location: ./painel.php");
         }
     ?>
     <main>
@@ -25,7 +27,7 @@
             <div class="d-flex justify-content-center align-items-center flex-column h-100">
                 <h4 class="my-4">Tela de login</h4>
                 <form action="recebe_login.php" method="POST">
-                    <span><?php echo $text ?></span>
+                    <span><?= $text ?></span>
                     <div class="my-2">
                         <label class="form-label" for="email">Email:</label>
                         <input class="form-control" type="email" name="email" id="email" required>
