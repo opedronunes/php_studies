@@ -38,9 +38,6 @@
                     </div>
                     <input class="btn btn-secondary my-2" type="submit" value="Enviar">
                 </form>
-                <div class="d-flex justify-content-start justify-content-center align-items-center gap-2">
-                    <a class="btn btn-outline-success my-3" href="./registro.php">Sair</a>
-                </div>
             </div>
         </section>
     </main>

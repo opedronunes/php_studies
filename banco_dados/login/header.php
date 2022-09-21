@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,24 +41,18 @@
             color: #8d8d8d;
         }
     </style>
-    <title>Painel</title>
+    <title>Painel Admin</title>
 </head>
-<?php 
-session_start();
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-    header("Location: ./index.php?login=err_acesso");
-}
-
-?>
 <body>
     <header>
         <div class="container">
             <nav >
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <?php if($_SESSION['no_perfil'] == 'Administrador') { ?>
+                    <li><a href="./painel.php">Home</a></li>
                     <li><a href="./admin.php">Administração</a></li>
-                    <?php } ?>
+                    <li><a href="./registro.php">Registar usuário</a></li>
+                    <li><a href="./editar.php">Atualizar usuário</a></li>
+                    <li><a href="">Deletar usuário</a></li>
                     <li>
                         <a href="./logoff.php">Sair</a>
                     </li>
@@ -68,9 +63,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 </div>
             </nav>
         </div>
-    </header>           
-    <main class="container">
-        <h1>Bem vindo!</h1>
-    </main>
+    </header>
 </body>
 </html>

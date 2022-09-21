@@ -1,3 +1,7 @@
+<?php 
+session_start();
+if($_SESSION['no_perfil'] == 'Administrador') { ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,37 +44,16 @@
             color: #8d8d8d;
         }
     </style>
-    <title>Painel</title>
+    <title>Painel Admin</title>
 </head>
-<?php 
-session_start();
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-    header("Location: ./index.php?login=err_acesso");
-}
-
-?>
 <body>
-    <header>
-        <div class="container">
-            <nav >
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <?php if($_SESSION['no_perfil'] == 'Administrador') { ?>
-                    <li><a href="./admin.php">Administração</a></li>
-                    <?php } ?>
-                    <li>
-                        <a href="./logoff.php">Sair</a>
-                    </li>
-                </ul>
-                    
-                <div id="login">
-                    <p><?php echo $_SESSION['no_usuario']?> - <?php echo $_SESSION['no_perfil'] ?></p>
-                </div>
-            </nav>
-        </div>
-    </header>           
+    <?php include("./header.php") ?>           
     <main class="container">
-        <h1>Bem vindo!</h1>
+        <h1>Área administrativa</h1>
     </main>
 </body>
 </html>
+
+<?php }else{
+    header("Location: ./painel.php");
+} ?>
