@@ -19,6 +19,7 @@ VALUES(
     '".$_POST["cpf"]."', 
     '".$_POST["email"]."',
     '".base64_encode($_POST["senha"])."',
+    '".$_POST["perfil"]."',
     ".$_POST["ativo"].")"
 );
 

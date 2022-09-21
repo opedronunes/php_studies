@@ -50,11 +50,11 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
         $text = "";
 
         if ($_GET["cad"] == "erro_cpf") {
-            $text = "<p style='color: red;'>Usuário já cadastrado! Informe outro cpf.</p>";
+            $text = "<p class='alert alert-danger'>Usuário já cadastrado! Informe outro cpf.</p>";
         }elseif($_GET["cad"] == "ok"){
-            $text = "<p style='color: green;'>Registrado com sucesso!.</p>";
+            $text = "<p class='alert alert-success'>Registrado com sucesso!.</p>";
         }elseif($_GET["cad"] == "erro"){
-            $text = "<p style='color: red;'>Erro no cadastro, tente novamente.</p>";
+            $text = "<p class='alert alert-warning'>Erro no cadastro, tente novamente.</p>";
         }
     ?>
     <main>
@@ -80,13 +80,22 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
                         <label class="form-label" for="senha">Senha:</label>
                         <input class="form-control" type="password" name="senha" id="senha" required>
                     </div>
+
                     <div class="by-2">
                         <label class="form-label" for="perfil">Perfil:</label>
-                        <input class="form-control" type="number" name="perfil" id="perfil" required>
+                        <select class="form-select" name="perfil" id="perfil" required>
+                            <option value="5">Adminstrador</option>
+                            <option value="10">Professor</option>
+                            <option value="15">Aluno</option>
+                        </select>
                     </div>
+
                     <div class="by-2">
-                        <label class="form-label" for="ativo">Ativo:</label>
-                        <input class="form-control" type="number" name="ativo" id="ativo" required>
+                        <label class="form-label" for="ativo">Status:</label>
+                        <select class="form-select" name="ativo" id="ativo" required>
+                            <option value="1">Ativo</option>
+                            <option value="2">Inativo</option>
+                        </select>
                     </div>
                     <input class="btn btn-secondary my-2" type="submit" value="Enviar">
                 </form>

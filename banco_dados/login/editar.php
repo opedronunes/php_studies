@@ -33,6 +33,15 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
 
                 <label class="form-label" for="senha_usuario">Senha:</label>
                 <input class="form-control" type="text" name="senha" id="senha_usuario" value="<?= base64_decode($_SESSION["senha_usuario"]); ?>">
+
+                <div class="by-2">
+                    <label for="perfil" class="form-label"></label>
+                    <select name="perfil" id="perfil" class="form-select">
+                        <option value="1" <?= ($_SESSION['perfil_id'] == 1) ? 'selected' : '' ?> >Administrador</option>
+                        <option value="2" <?= ($_SESSION['perfil_id'] == 2) ? 'selected' : '' ?> >Professor</option>
+                        <option value="3" <?= ($_SESSION['perfil_id'] == 3) ? 'selected' : '' ?> >Aluno</option>
+                    </select>
+                </div>
                 
 
                 <div class="my-2">

@@ -52,7 +52,7 @@
                     <li><a href="./admin.php">Administração</a></li>
                     <li><a href="./registro.php">Registar usuário</a></li>
                     <li><a href="./editar.php">Atualizar usuário</a></li>
-                    <li><a href="">Deletar usuário</a></li>
+                    <li><a href="./delete.php">Deletar usuário</a></li>
                     <li>
                         <a href="./logoff.php">Sair</a>
                     </li>
