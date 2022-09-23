@@ -56,7 +56,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 <ul>
                     <li><a href="">Home</a></li>
                     <?php if($_SESSION['no_perfil'] == 'Administrador') { ?>
-                    <li><a href="./admin.php">Administração</a></li>
+                    <li><a href="./admin/admin.php">Administração</a></li>
                     <?php } ?>
                     <li>
                         <a href="./logoff.php">Sair</a>
