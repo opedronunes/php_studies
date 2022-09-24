@@ -68,20 +68,20 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
                         <label class="form-label" for="nome">Nome:</label>
                         <input class="form-control" type="text" name="nome" id="nome" required>
                     </div>
-                    <div class="by-2">
+                    <div class="my-2">
                         <label class="form-label" for="">CPF:</label>
                         <input class="form-control" type="text" name="cpf" id="cpf" required>
                     </div>
-                    <div class="by-2">
+                    <div class="my-2">
                         <label class="form-label" for="email">Email:</label>
                         <input class="form-control" type="email" name="email" id="email" required>
                     </div>
-                    <div class="by-2">
+                    <div class="my-2">
                         <label class="form-label" for="senha">Senha:</label>
                         <input class="form-control" type="password" name="senha" id="senha" required>
                     </div>
 
-                    <div class="by-2">
+                    <div class="my-2">
                         <label class="form-label" for="perfil">Perfil:</label>
                         <select class="form-select" name="perfil" id="perfil" required>
                             <option value="5">Adminstrador</option>
@@ -90,7 +90,7 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
                         </select>
                     </div>
 
-                    <div class="by-2">
+                    <div class="my-2">
                         <label class="form-label" for="ativo">Status:</label>
                         <select class="form-select" name="ativo" id="ativo" required>
                             <option value="1">Ativo</option>
@@ -106,7 +106,7 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
 </html>
 
 <?php }else{
-    header("Location: ./painel.php");
+    header("Location: ../painel.php");
 }
 
 ?>

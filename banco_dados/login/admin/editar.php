@@ -16,44 +16,55 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
         $text = "";
         if (isset($_GET["atualizar"])) {
             if ($_GET["atualizar"] == "ok") {
-                $text = "<p class='alert alert-success my-2'>Dados atualizados com sucesso!</p>";
+                $text = "<p class='alert alert-success my-2'>Dados atualizados com sucesso!<br>Login encerrará em 5 segundos!</p>";
+                echo "<meta http-equiv='refresh' content='5;URL=../logoff.php'>";
             }
         }
     ?>
     <main>
-        <div class="container">
+        <div class="container" style="height: calc(100vh - 70px);">
+            <div class="d-flex justify-content-center align-items-center flex-column h-100">
+                <form action="./recebe_editar.php" method="POST">
+                    <span><?= $text ?></span>
+                    <div class="my-2">
+                        <label class="form-label" for="no_usuario">Nome:</label>
+                        <input class="form-control" type="text" name="nome" id="no_usuario" value="<?= $_SESSION['no_usuario'] ?>">
+                    </div>
+                    <div class="my-2">
+                        <label class="form-label" for="email_usuario">E-mail:</label>
+                        <input class="form-control" type="email" name="email" id="" value="<?= $_SESSION['email_usuario'] ?>">
+                    </div>
+                    <div class="my-2">
+                        <label class="form-label" for="senha_usuario">Senha:</label>
+                        <input class="form-control" type="text" name="senha" id="senha_usuario" value="<?= base64_decode($_SESSION["senha_usuario"]); ?>">
+                    </div>
+                    <div class="my-2">
+                        <label for="perfil" class="form-label">Perfil:</label>
+                        <select name="perfil" id="perfil" class="form-select">
+                            <option value="5" <?= ($_SESSION['no_perfil'] == "Administrador") ? 'selected' : '' ?> >Administrador</option>
+                            <option value="10" <?= ($_SESSION['no_perfil'] == "Professor") ? 'selected' : '' ?> >Professor</option>
+                            <option value="15" <?= ($_SESSION['no_perfil'] == "Aluno") ? 'selected' : '' ?> >Aluno</option>
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <label for="ativo" class="form-label">Status:</label>
+                        <select name="ativo" id="ativo" class="form-select">
+                            <option value="0" <?= ($_SESSION['descricao_ativo'] == "Inativo") ? 'selected' : '' ?> >Inativo</option>
+                            <option value="1" <?= ($_SESSION['descricao_ativo'] == "Ativo") ? 'selected' : '' ?> >Ativo</option>
+                        </select>
+                    </div>
+                    <div class="my-2">
+                        <input class="btn btn-warning" type="submit" value="Enviar">
+                    </div>
+                </form>
 
-            <form action="./recebe_editar.php" method="POST">
-                <span><?= $text ?></span>
-                <label class="form-label" for="no_usuario">Nome:</label>
-                <input class="form-control" type="text" name="nome" id="no_usuario" value="<?= $_SESSION['no_usuario'] ?>">
-
-                <label class="form-label" for="email_usuario">E-mail:</label>
-                <input class="form-control" type="email" name="email" id="" value="<?= $_SESSION['email_usuario'] ?>">
-
-                <label class="form-label" for="senha_usuario">Senha:</label>
-                <input class="form-control" type="text" name="senha" id="senha_usuario" value="<?= base64_decode($_SESSION["senha_usuario"]); ?>">
-
-                <div class="by-2">
-                    <label for="perfil" class="form-label"></label>
-                    <select name="perfil" id="perfil" class="form-select">
-                        <option value="1" <?= ($_SESSION['perfil_id'] == 1) ? 'selected' : '' ?> >Administrador</option>
-                        <option value="2" <?= ($_SESSION['perfil_id'] == 2) ? 'selected' : '' ?> >Professor</option>
-                        <option value="3" <?= ($_SESSION['perfil_id'] == 3) ? 'selected' : '' ?> >Aluno</option>
-                    </select>
-                </div>
-                
-
-                <div class="my-2">
-                    <input class="btn btn-warning" type="submit" value="Enviar">
-                </div>
-            </form>
+            </div>
         </div>
     </main>
 </body>
 </html>
 <?php }else{
-    header("Location: ./painel.php");
+    header("Location: ../painel.php");
 }
 
 ?>

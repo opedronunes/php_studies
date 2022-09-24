@@ -14,6 +14,7 @@ $sql = mysqli_query($con, "SELECT
                         INNER JOIN tb_perfil as p ON
                         p.cod_perfil = u.cod_perfil
                         INNER JOIN tb_ativo as a ON
-                        a.cod_ativo = u.cod_ativo;");
+                        a.cod_ativo = u.cod_ativo 
+                        ORDER BY no_usuario;");
 
 ?>

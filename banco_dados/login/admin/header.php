@@ -54,7 +54,7 @@
                     <li><a href="./editar.php">Atualizar usuário</a></li>
                     <li><a href="./delete.php">Deletar usuário</a></li>
                     <li>
-                        <a href="./logoff.php">Sair</a>
+                        <a href="../logoff.php">Sair</a>
                     </li>
                 </ul>
                     

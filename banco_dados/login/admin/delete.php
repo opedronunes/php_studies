@@ -57,5 +57,5 @@ if($_SESSION['no_perfil'] == 'Administrador') { ?>
 
 
 <?php }else{
-    header("Location: ./painel.php");
+    header("Location: ../painel.php");
 }
