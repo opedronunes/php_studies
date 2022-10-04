@@ -136,7 +136,11 @@
 
 <script>
         jQuery(document).ready(function($){
-            $('#tblUser').DataTable();
+            $('#tblUser').DataTable({
+                language: {
+                    url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json'
+                }
+            });
             $("#form-body").hide();
 
             $("#insert-btn").on('click',function(){

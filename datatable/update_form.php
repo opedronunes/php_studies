@@ -38,6 +38,10 @@
                         <label for="email" class="form-label">Email:</label>
                         <input type="text" name="email" class="form-control" id="" value="<?= $registro['email_usuario'] ?>">
                     </div>
+                    <div class="my-2">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" name="cpf" class="form-control" id="" value="<?= $registro['nu_cpf_usuario'] ?>">
+                    </div>
                     <button type="submit" class="btn btn-primary my-2" id="submit">Atualizar</button>
                 </form>
             </div>

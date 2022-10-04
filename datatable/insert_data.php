@@ -10,7 +10,9 @@ $sql = "INSERT INTO tb_usuario(no_usuario, nu_cpf_usuario, email_usuario, senha_
     '".$_POST["perfil"]."',
     ".$_POST["ativo"].")";
 
+    
 $resultado = mysqli_query($con, $sql);
+
 
 ?>
 
