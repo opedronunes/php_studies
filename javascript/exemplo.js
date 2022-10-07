@@ -3,6 +3,7 @@
  * 2 - exemplo de comentário, com mais de uma linha.
  */
 
+/*
 
 console.log("Olá Mundo!");
 console.log("Olá Mundo! 2");
@@ -33,3 +34,28 @@ console.log(valor[4]);
 valor[4] = 67;
 console.log(valor[4]);
 console.log(valor.length);
+
+*/
+
+let a = 10;
+let b = 5;
+
+function soma(a, b = 0){
+    return a + b;
+}
+console.log(soma(2,4));
+
+const ImprimeSoma = function(x,y){
+    console.log(x + y)
+}
+
+ImprimeSoma(4,6);
+
+const soma_funcao = (w,z) => {
+    return w + z
+}
+console.log(soma_funcao(8,12));
+
+const multiplicacao = (num1, num2) => num1 * num2;
+
+console.log(multiplicacao(2,4));
