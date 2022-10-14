@@ -17,6 +17,10 @@
 
 ## Projeto final
 
+<div>
+  🚀 <a href="https://github.com/opedronunes/app_gestao_frota" target="blank">Deploy: Projeto final</a>
+</div>
+
 Englobará todo conteúdo do curso: <br>
 
 Em conformidade de toda a turma poderá ser criado um sistema de tema variado a escolha de cada aluno. <br>
